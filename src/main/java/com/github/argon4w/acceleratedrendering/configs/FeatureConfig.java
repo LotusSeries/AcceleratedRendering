@@ -139,7 +139,7 @@ public class FeatureConfig {
 				.comment				("- ENABLED: Debug context will be enabled, which can prevent NVIDIA driver from applying the \"threaded optimization\" that causes the glitches.")
 				.translation			("acceleratedrendering.configuration.core_settings.debug_context")
 				.worldRestart			()
-				.defineEnum				("debug_context",						FeatureStatus.ENABLED);
+				.defineEnum				("debug_context",						FeatureStatus.DISABLED);
 
 		coreForceTranslucentAcceleration				= builder
 				.comment				("- DISABLED: Translucent RenderType will fallback to vanilla rendering pipeline if the accelerated pipeline does not support translucent sorting unless mods explicitly enable force translucent acceleration temporarily when rendering their own geometries.")
